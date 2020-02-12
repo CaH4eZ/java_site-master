@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/journal</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <mapping class="ru.ugrasu.journal.model.entities.RoleEntity"/>
+      <mapping class="ru.ugrasu.journal.model.entities.UserEntity"/>
+      <mapping class="ru.ugrasu.journal.model.entities.DepartmentEntity"/>
+      <mapping class="ru.ugrasu.journal.model.entities.ExcerciseEntity"/>
+      <mapping class="ru.ugrasu.journal.model.entities.InstituteEntity"/>
+      <mapping class="ru.ugrasu.journal.model.entities.StudyGroupEntity"/>
+      <mapping class="ru.ugrasu.journal.model.entities.SubjectEntity"/>
+      <mapping class="ru.ugrasu.journal.model.entities.UserExcerciseEntity"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
